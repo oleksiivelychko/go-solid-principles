@@ -1,8 +1,4 @@
-package bad
-
-/*
-Single responsibility in wrong way.
-*/
+package srp_bad
 
 // entity has two responsibilities: managing data and saving data.
 type entity struct{}
