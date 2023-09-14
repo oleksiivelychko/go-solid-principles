@@ -1,8 +1,4 @@
-package ocp
-
-/*
-Open-closed in wrong way.
-*/
+package ocp_bad
 
 type entityA struct {
 	paramA int
@@ -13,9 +9,7 @@ type entityB struct {
 	paramC int
 }
 
-/*
-Need to modify implementation for each new entity.
-*/
+// need to modify implementation for each new entity.
 func total(object interface{}) int {
 	switch s := object.(type) {
 	case *entityA:
