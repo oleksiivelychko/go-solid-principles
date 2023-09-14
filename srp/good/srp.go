@@ -1,8 +1,4 @@
-package good
-
-/*
-Single responsibility in right way.
-*/
+package srp_good
 
 // entity has only one responsibility: managing data.
 type entity struct{}
