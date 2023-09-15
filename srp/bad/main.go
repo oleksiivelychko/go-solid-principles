@@ -1,4 +1,4 @@
-package srp_bad
+package main
 
 // entity has two responsibilities: managing data and saving data.
 type entity struct{}

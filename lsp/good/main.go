@@ -1,4 +1,4 @@
-package good
+package main
 
 type base interface {
 	actionB() string

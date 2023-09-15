@@ -1,4 +1,4 @@
-package good
+package main
 
 type entityA struct {
 	paramA int

@@ -1,4 +1,4 @@
-package ocp_bad
+package main
 
 type entityA struct {
 	paramA int

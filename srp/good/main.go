@@ -1,4 +1,4 @@
-package srp_good
+package main
 
 // entity has only one responsibility: managing data.
 type entity struct{}
