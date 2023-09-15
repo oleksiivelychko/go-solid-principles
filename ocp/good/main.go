@@ -9,9 +9,9 @@ type entityB struct {
 	paramC int
 }
 
-// open for expansion (new types of entity might be implemented through interface)
-// closed for modification (doesn't need to change the total() function after adding each new entity).
-type entity interface {
+// open for expansion (new types of iEntity might be implemented through interface)
+// closed for modification (doesn't need to change the total() function after adding each new iEntity).
+type iEntity interface {
 	total() int
 }
 
