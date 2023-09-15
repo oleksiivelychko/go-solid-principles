@@ -1,11 +1,11 @@
 package main
 
-type base interface {
+type iBase interface {
 	actionB() string
 }
 
-type derivedBase interface {
-	base
+type iDerivedBase interface {
+	iBase
 	actionA() string
 }
 

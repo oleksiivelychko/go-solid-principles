@@ -1,6 +1,6 @@
 package main
 
-type base interface {
+type iBase interface {
 	actionA() string
 }
 
