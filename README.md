@@ -12,6 +12,10 @@
 - [wrong way](lsp/bad/main.go)
 - [right way](lsp/good/main.go)
 
+📌 **Interface Segregation** _(clients should not be forced to depend upon interfaces that they do not use)_:
+- [wrong way](isp/bad/main.go)
+- [right way](isp/good/main.go)
+
 ---
 ※ References:
 - [SOLID](https://en.wikipedia.org/wiki/SOLID)
