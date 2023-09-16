@@ -16,6 +16,10 @@
 - [wrong way](isp/bad/main.go)
 - [right way](isp/good/main.go)
 
+📌 **Dependency Inversion** _(depend upon abstractions, not concretions)_:
+- [wrong way](dip/bad/main.go)
+- [right way](dip/good/main.go)
+
 ---
 ※ References:
 - [SOLID](https://en.wikipedia.org/wiki/SOLID)
