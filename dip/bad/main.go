@@ -6,7 +6,7 @@ type serviceB struct {
 	service *serviceA
 }
 
-func (e *serviceA) action() {}
+func (s *serviceA) action() {}
 
 // serviceB depends on serviceA (implementation)
 func (s *serviceB) action() {

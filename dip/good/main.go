@@ -13,14 +13,14 @@ type serviceC struct {
 	service iService
 }
 
-func (a *serviceA) actionA() string {
+func (s *serviceA) actionA() string {
 	return "A"
 }
 
-func (b *serviceB) actionA() string {
+func (s *serviceB) actionA() string {
 	return "B"
 }
 
-func (c *serviceC) actionB() string {
-	return c.service.actionA()
+func (s *serviceC) actionB() string {
+	return s.service.actionA()
 }
