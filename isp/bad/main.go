@@ -18,10 +18,8 @@ func (e *entityA) actionC() {}
 
 func (e *entityB) actionA() {}
 
-func (e *entityB) actionB() {
-	// not supported
-}
+// not supported
+func (e *entityB) actionB() {}
 
-func (e *entityB) actionC() {
-	// not supported
-}
+// not supported
+func (e *entityB) actionC() {}
