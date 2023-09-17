@@ -1,26 +1,20 @@
 package main
 
 type iBase interface {
-	actionB() string
+	actionB()
 }
 
 type iDerivedBase interface {
 	iBase
-	actionA() string
+	actionA()
 }
 
 type derivedA struct{}
 
-func (d *derivedA) actionA() string {
-	return "derivedA is doing actionA."
-}
-
-func (d *derivedA) actionB() string {
-	return "derivedB is doing actionB."
-}
-
 type derivedB struct{}
 
-func (d *derivedB) actionB() string {
-	return "derivedB is doing actionB."
-}
+func (d *derivedA) actionA() {}
+
+func (d *derivedA) actionB() {}
+
+func (d *derivedB) actionB() {}

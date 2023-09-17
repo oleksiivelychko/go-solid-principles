@@ -1,18 +1,14 @@
 package main
 
 type iBase interface {
-	actionA() string
+	actionA()
 }
 
 type derivedA struct{}
 
-func (d *derivedA) actionA() string {
-	return "derivedA is doing actionA."
-}
-
-// derivedB is not intended for actionA() and violates the principle.
 type derivedB struct{}
 
-func (d *derivedB) actionA() string {
-	return "derivedB is doing actionA."
-}
+func (d *derivedA) actionA() {}
+
+// derivedB is not intended for actionA() and violates the principle.
+func (d *derivedB) actionA() {}
