@@ -3,10 +3,8 @@ package main
 // entity has two responsibilities: managing data and saving data.
 type entity struct{}
 
-func (e *entity) getData() {
-	// managing data
-}
+// managing data
+func (e *entity) getData() {}
 
-func (e *entity) save() {
-	// saving data
-}
+// saving data
+func (e *entity) save() {}
