@@ -1,20 +1,17 @@
 package main
 
-type iBase interface {
-	actionB()
-}
-
-type iDerivedBase interface {
-	iBase
+type classA interface {
+	classB
 	actionA()
 }
 
-type derivedA struct{}
+type classB interface {
+	actionB()
+}
 
-type derivedB struct{}
+type subclassA struct{}
+type subclassB struct{}
 
-func (d *derivedA) actionA() {}
-
-func (d *derivedA) actionB() {}
-
-func (d *derivedB) actionB() {}
+func (s *subclassA) actionA() {}
+func (s *subclassA) actionB() {}
+func (s *subclassB) actionB() {}

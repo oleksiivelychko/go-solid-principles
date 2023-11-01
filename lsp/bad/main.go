@@ -1,14 +1,13 @@
 package main
 
-type iBase interface {
+type class interface {
 	actionA()
 }
 
-type derivedA struct{}
+type classA struct{}
+type classB struct{}
 
-type derivedB struct{}
+func (s *classA) actionA() {}
 
-func (d *derivedA) actionA() {}
-
-// derivedB is not intended for actionA() and violates the principle.
-func (d *derivedB) actionA() {}
+// classB is not intended for actionA() and violates the principle
+func (s *classB) actionA() {}
