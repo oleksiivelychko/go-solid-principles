@@ -1,10 +1,7 @@
 package main
 
-// entity has two responsibilities: managing data and saving data.
+// entity has two responsibilities: manage data and save data
 type entity struct{}
 
-// managing data
-func (e *entity) getData() {}
-
-// saving data
+func (e *entity) data() {}
 func (e *entity) save() {}

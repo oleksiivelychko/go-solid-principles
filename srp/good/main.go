@@ -1,13 +1,11 @@
 package main
 
-// entity has only one responsibility: managing data.
+// entity has only one responsibility: manage data
 type entity struct{}
 
-// entityRepository has only one responsibility: saving data.
+func (e *entity) data() {}
+
+// entityRepository has only one responsibility: save data
 type entityRepository struct{}
 
-// managing data
-func (e *entity) getData() {}
-
-// saving data
-func (repo *entityRepository) save(e *entity) {}
+func (r *entityRepository) save(e *entity) {}
