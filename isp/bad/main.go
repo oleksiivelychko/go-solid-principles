@@ -1,19 +1,16 @@
 package main
 
-type iEntity interface {
+type action interface {
 	actionA()
 	actionB()
 	actionC()
 }
 
 type entityA struct{}
-
 type entityB struct{}
 
 func (e *entityA) actionA() {}
-
 func (e *entityA) actionB() {}
-
 func (e *entityA) actionC() {}
 
 func (e *entityB) actionA() {}
