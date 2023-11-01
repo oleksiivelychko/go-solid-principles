@@ -1,3 +1,3 @@
-module github.com/oleksiivelychko/go-solid
+module github.com/oleksiivelychko/go-solid-principles
 
-go 1.21.0
+go 1.21.3
