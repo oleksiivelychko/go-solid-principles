@@ -1,26 +1,18 @@
 package main
 
-type iService interface {
-	actionA() string
-}
+type service interface{ action() string }
 
 type serviceA struct{}
-
 type serviceB struct{}
 
-// serviceC depends on iService (abstraction)
+// serviceC depends on service (abstraction)
 type serviceC struct {
-	service iService
+	service service
 }
 
-func (s *serviceA) actionA() string {
-	return "A"
-}
+func (s *serviceA) action() string { return "A" }
+func (s *serviceB) action() string { return "B" }
 
-func (s *serviceB) actionA() string {
-	return "B"
-}
-
-func (s *serviceC) actionB() string {
-	return s.service.actionA()
+func (s *serviceC) action() string {
+	return s.service.action()
 }
