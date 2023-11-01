@@ -1,24 +1,17 @@
 package main
 
-// open for expansion (new types of iEntity might be implemented through interface)
-// closed for modification (doesn't need to change the total() after adding each new iEntity).
-type iEntity interface {
-	total() int
-}
+// open for expansion (new types of entity might be implemented through interface)
+// closed for modification (doesn't need to change the total() after adding each new entity)
+type entity interface{ total() int }
 
 type entityA struct {
-	paramA int
-	paramB int
+	a int
+	b int
 }
 
 type entityB struct {
-	paramC int
+	c int
 }
 
-func (e *entityA) total() int {
-	return e.paramA * e.paramB
-}
-
-func (e *entityB) total() int {
-	return e.paramC * 2
-}
+func (e *entityA) total() int { return e.a * e.b }
+func (e *entityB) total() int { return e.c * 2 }

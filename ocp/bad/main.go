@@ -1,21 +1,21 @@
 package main
 
 type entityA struct {
-	paramA int
-	paramB int
+	a int
+	b int
 }
 
 type entityB struct {
-	paramC int
+	c int
 }
 
-// need to modify implementation for each new entity.
+// need to modify implementation for each new entity
 func total(object interface{}) int {
-	switch s := object.(type) {
+	switch t := object.(type) {
 	case *entityA:
-		return s.paramA * s.paramB
+		return t.a * t.b
 	case *entityB:
-		return s.paramC * 2
+		return t.c * 2
 	default:
 		return 0
 	}
