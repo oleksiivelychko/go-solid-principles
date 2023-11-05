@@ -5,7 +5,7 @@ type entity struct{}
 
 func (e *entity) data() {}
 
-// entityRepository has only one responsibility: save data
-type entityRepository struct{}
+// repository has only one responsibility: save data
+type repository struct{}
 
-func (r *entityRepository) save(e *entity) {}
+func (r *repository) save(e *entity) {}
