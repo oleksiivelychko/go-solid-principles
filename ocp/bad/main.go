@@ -10,8 +10,8 @@ type entityB struct {
 }
 
 // need to modify implementation for each new entity
-func total(object interface{}) int {
-	switch t := object.(type) {
+func total(e interface{}) int {
+	switch t := e.(type) {
 	case *entityA:
 		return t.a * t.b
 	case *entityB:
