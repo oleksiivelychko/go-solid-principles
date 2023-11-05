@@ -1,8 +1,6 @@
 package main
 
-type class interface {
-	actionA()
-}
+type class interface{ actionA() }
 
 type classA struct{}
 type classB struct{}
