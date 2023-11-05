@@ -8,13 +8,13 @@ func TestDependencyInversion(t *testing.T) {
 		b = &serviceC{&serviceB{}}
 	)
 
-	g := a.action()
-	if g != "A" {
-		t.Errorf("expected %q, got %q", "A", g)
+	res := a.action()
+	if res != "A" {
+		t.Errorf("expected %q, got %q", "A", res)
 	}
 
-	g = b.action()
-	if g != "B" {
-		t.Errorf("expected %q, got %q", "B", g)
+	res = b.action()
+	if res != "B" {
+		t.Errorf("expected %q, got %q", "B", res)
 	}
 }
