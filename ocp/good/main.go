@@ -9,9 +9,7 @@ type entityA struct {
 	b int
 }
 
-type entityB struct {
-	c int
-}
+type entityB struct{ c int }
 
 func (e *entityA) total() int { return e.a * e.b }
 func (e *entityB) total() int { return e.c * 2 }

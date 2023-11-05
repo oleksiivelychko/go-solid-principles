@@ -5,9 +5,7 @@ type classA interface {
 	actionA()
 }
 
-type classB interface {
-	actionB()
-}
+type classB interface{ actionB() }
 
 type subclassA struct{}
 type subclassB struct{}

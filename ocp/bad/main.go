@@ -5,9 +5,7 @@ type entityA struct {
 	b int
 }
 
-type entityB struct {
-	c int
-}
+type entityB struct{ c int }
 
 // need to modify implementation for each new entity
 func total(e interface{}) int {
