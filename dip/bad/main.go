@@ -8,5 +8,5 @@ type serviceB struct {
 
 func (s *serviceA) action() {}
 
-// serviceB depends on serviceA (implementation)
+// serviceB depends on serviceA implementation
 func (s *serviceB) action() { s.service.action() }
